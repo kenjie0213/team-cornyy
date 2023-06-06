@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="" class="imglogo">
+            <p id="logo">CornScan</p>
+        </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="home.html" class="active" >Home</a>
+                    </li>
+
+                    <li>
+                        <a href="classifier.html">Camera Classifier</a>
+                    </li>
+                    
+                    <li>
+                        <a href="classifier2.html" >File Classifier</a>
+                    </li>
+
+                    <li>
+                        <a href="disease.html">Diseases</a>
+                    </li>
+
+                    <li>
+                    <a href="developers.html" >Developers</a>
+                    </li>
+                </ul>
+            </nav>
+        
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+   
+</body>
+</html>
